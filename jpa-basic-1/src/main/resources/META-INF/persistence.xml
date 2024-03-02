@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+
+
+  <!--<persistence-unit name="default">
+
+  </persistence-unit>
+-->
+
+  <persistence-unit name="postgresql-jpa-all" >
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.1.152/jpa-all"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.password" value="passw0rd"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+    </properties>
+  </persistence-unit>
+
+
+  <!--<persistence-unit name="mysql-jpa-all" >
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.1.169/jpa-all"/>
+      <property name="javax.persistence.jdbc.user" value="dbuser"/>
+      <property name="javax.persistence.jdbc.password" value="passw0rd"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+    </properties>
+    </persistence-unit>-->
+
+</persistence>
