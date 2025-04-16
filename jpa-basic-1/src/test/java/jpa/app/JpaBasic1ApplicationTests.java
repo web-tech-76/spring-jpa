@@ -1,4 +1,4 @@
-package jpa.basic1.app;
+package jpa.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
